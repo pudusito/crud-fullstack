@@ -1,0 +1,20 @@
+========================================
+COMPARACIÓN CRUD DJANGO vs CRUD AXIOS
+========================================
+
+Aspecto               | CRUD con Django tradicional              | CRUD con Axios (API + DRF)
+------------------------------------------------------------------------------------------------
+Arquitectura          | Monolítico: servidor renderiza HTML      | Tipo microservicio/API: backend expone datos,
+                      |                                          | frontend los consume con JS
+------------------------------------------------------------------------------------------------
+Recarga de página     | Sí, al enviar formularios                | No, usa AJAX/Fetch → experiencia fluida
+                      |                                          | (similar a un SPA)
+------------------------------------------------------------------------------------------------
+Curva de aprendizaje  | Más sencillo para empezar                | Más complejo: requiere API + Serializers + JS
+------------------------------------------------------------------------------------------------
+Escalabilidad         | Ideal para apps pequeñas o medianas      | Mejor para SPAs, móviles o frontends modernos
+------------------------------------------------------------------------------------------------
+Flexibilidad          | Limitado a formularios y vistas Django   | Dinámico: consume API desde React, Vue, Angular, etc.
+------------------------------------------------------------------------------------------------
+Reutilización         | Difícil reutilizar fuera del proyecto    | API reutilizable por web, móvil u otros sistemas
+------------------------------------------------------------------------------------------------
